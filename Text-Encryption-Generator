@@ -1,0 +1,16 @@
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+cipher = "qwertyuiopasdfghjklzxcvbnm"
+
+userinput=input("Enter text to encrypt: ").lower()
+encrypted_text=""
+
+for char in userinput:
+    if char in alphabet:
+        ind=alphabet.index(char)
+        encrypted_text+=cipher[ind]
+    else:
+        encrypted_text+=char
+
+print(f"Encrypted Text: {encrypted_text}")
+
+        
